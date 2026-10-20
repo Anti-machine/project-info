@@ -22,8 +22,7 @@ print(f"Lines\t{line_count}")
 
 try:
     branch = subprocess.check_output(
-        ["git", "branch", "--show-current"],
-        text=True
+        ["git", "branch", "--show-current"], text=True
     ).strip()
 
     print("\nGit:")
